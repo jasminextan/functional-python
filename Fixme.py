@@ -84,6 +84,10 @@ def squares(n):
     >>> squares(10)
     [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
     '''
+    xs = range(1, n+1)
+    xs = map(lambda x: x**2, xs)
+    xs = list((xs))
+    return xs
 
 
 def lengths(strings):
@@ -97,3 +101,7 @@ def lengths(strings):
     >>> lengths(['this','is','a','test'])
     [4, 2, 1, 4]
     '''
+    xs = strings
+    xs = map(lambda x: len(x), xs)
+    xs = list((xs))
+    return xs
